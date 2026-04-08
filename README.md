@@ -1,7 +1,7 @@
 # Nord 🧊
 ___
 # Lazy installation
-```bash
+```lua
 return {
     "Kopihue/nord",
     config = function()
@@ -19,19 +19,19 @@ ___
 
 ___
 # Config ⚙️
-```bash
-	require("nord").setup({
-	    transparency = false,
-	    bold = true,
-	    italic = true,
-	    line_number_pink = true,
-	})
+```lua
+require("nord").setup({
+	transparency = false,
+	bold = true,
+	italic = true,
+	line_number_pink = true,
+})
 ```
 
 ___
 # LSP note ⚠️
 The LSP plugin will automatically paint some words in the file, to deactivate that feature and mantain the original colors put this in your init.lua:
-```bash
+```lua
 vim.api.nvim_create_autocmd("LspAttach", {
     callback = function(args)
       	local client = vim.lsp.get_client_by_id(args.data.client_id)
