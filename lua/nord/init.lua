@@ -27,11 +27,13 @@ local highlights = function(opts)
 	["LineNr"] = { fg = palette.nord2 },
 	["Pmenu"] = { bg = background },
 	["Directory"] = { fg = palette.nord9 },
+	["Visual"] = { bg = palette.nord0 },
 
 	-- treesitter
 	["@constructor.lua"] = { fg = palette.nord7 },
 	["@module.rust"] = { fg = palette.nord8 },
 	["@variable"] = { fg = palette.nord4 },
+	["@function.macro.rust"] = { fg = palette.nord15 },
 
 	-- blink
 	["BlinkCmpMenuSelection"] = { bg = palette.nord0 },
