@@ -12,6 +12,7 @@ local highlights = function(opts)
 	["Normal"] = { bg = background },
 	["Comment"] = { fg = palette.nord3, italic = italic },
 	["Keyword"] = { fg = palette.nord9 },
+	["Statement"] = { fg = palette.nord7 },
 	["Delimiter"] = { fg = palette.nord9 },
 	["Special"] = { fg = palette.nord7, bold = bold },
 	["String"] = { fg = palette.nord14 },
@@ -28,12 +29,22 @@ local highlights = function(opts)
 	["Pmenu"] = { bg = background },
 	["Directory"] = { fg = palette.nord9 },
 	["Visual"] = { bg = palette.nord0 },
+	["Search"] = { bg = palette.nord0 },
+	["CurSearch"] = { bg = palette.nord0 },
 
 	-- treesitter
 	["@constructor.lua"] = { fg = palette.nord7 },
 	["@module.rust"] = { fg = palette.nord8 },
 	["@variable"] = { fg = palette.nord4 },
 	["@function.macro.rust"] = { fg = palette.nord15 },
+	["@markup.heading.1.markdown"] = { fg = palette.nord11 },
+	["@markup.heading.2.markdown"] = { fg = palette.nord12 },
+	["@markup.heading.3.markdown"] = { fg = palette.nord13 },
+	["@markup.heading.4.markdown"] = { fg = palette.nord14 },
+	["@markup.heading.5.markdown"] = { fg = palette.nord15 },
+	["@markup.heading.6.markdown"] = { fg = palette.nord7 },
+	["@markup.link.markdown_inline"] = { fg = palette.nord14 },
+	["@markup.strong"] = { fg = palette.nord12, bold = true },
 
 	-- blink
 	["BlinkCmpMenuSelection"] = { bg = palette.nord0 },
